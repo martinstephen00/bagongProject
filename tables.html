@@ -5,174 +5,194 @@
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-<!-- jQuery library -->
+	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
 </head>
 <body>
+		<!--Header-->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<!--Logo-->
+				<div class="navbar-header ">
+					<a href="#" class="navbar-brand">BOOTSTRAP TUTORIAL</a>
+				</div>
+			</div>
+		</nav>
+		<!--End Header-->
 
-<div class="container-fluid">
 
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<!--Logo-->
-			<div class="navbar-header ">
-				<a href="#" class="navbar-brand">BOOTSTRAP TUTORIAL</a>
+	<div class="row">
+		<!--Side Menu-->
+		<div class="col-md-2">
+		<div class='sidebar'>
+				<ul>
+					<li> <a href="index.html">Home</a> </li>
+					<li> <a href="typography.html">Typography</a></li>
+					<li> <a href="tables.html">Tables</a> </li>
+					<li> <a href="images.html">Images</a> </li>
+					<li> <a href="jumbotron.html">Jumbotron</a> </li>
+					<li> <a href="wells.html">Wells</a> </li>
+					<li> <a href="alerts.html">Alerts</a> </li>
+					<li> <a href="buttons.html">Buttons</a> </li>
+					<li> <a href="buttonGroups.html">Button Groups</a> </li>
+					<li> <a href="glyphicons.html">Glyphicons</a> </li>
+					<li> <a href="badgesLabels.html">Badges Label</a> </li>
+					<li> <a href="progressBars.html">Progress Bars</a> </li>
+					<li> <a href="pagination.html">Pagination</a> </li>
+					<li> <a href="pager.html">Pager</a> </li>
+					<li> <a href="listGroups.html">List Groups</a> </li>
+					<li> <a href="panels.html">Panels</a> </li>
+					<li> <a href="dropdowns.html">Dropdowns</a> </li>
+					<li> <a href="collapse.html">Collapse</a> </li>
+					<li> <a href="tabsPills.html">Tabs Pills</a> </li>
+					<li> <a href="navbar.html">Navbar</a> </li>
+					<li> <a href="forms.html">Froms</a> </li>
+					<li> <a href="inputs.html">Input</a> </li>
+					<li> <a href="inputs2.html">Input 2</a> </li>
+					<li> <a href="mediaObjects.html">Media Objects</a> </li>
+					<li> <a href="carousel.html">Carousel</a> </li>
+					<li> <a href="modal.html">Modal</a> </li>
+					<li> <a href="tooltip.html">Tooltip</a> </li>
+					<li> <a href="popover.html">Popover</a> </li>
+					<li> <a href="scrollspy.html">Scrollspy</a> </li>
+					<li> <a href="affix.html">Affix</a> </li>	
+				</ul>
+		</div>
+		</div>
+		<!--End Side Menu-->
+
+		<!--Content-->
+		<div id="main">
+		<div class="col-md-10">
+					<br><br>
+					<div class="page-header">
+						<h2>Tables</h2>
+					</div>
+
+					<div class="container">
+					  <h2>Basic Table</h2>
+					  <div class="jumbotron">
+					  <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>            
+					  <table class="table">
+					    <thead>
+					      <tr>
+					        <th>Firstname</th>
+					        <th>Lastname</th>
+					        <th>Email</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr>
+					        <td>John</td>
+					        <td>Doe</td>
+					        <td>john@example.com</td>
+					      </tr>
+					      <tr>
+					        <td>Mary</td>
+					        <td>Moe</td>
+					        <td>mary@example.com</td>
+					      </tr>
+					      <tr>
+					        <td>July</td>
+					        <td>Dooley</td>
+					        <td>july@example.com</td>
+					      </tr>
+					    </tbody>
+					  </table>
+					  </div>
+					</div>
+
+					<div class="container">
+					  <h2>Striped Rows</h2>
+					  <div class="jumbotron">
+					  <p>The .table-striped class adds zebra-stripes to a table:</p>            
+					  <table class="table table-striped">
+					    <thead>
+					      <tr>
+					        <th>Firstname</th>
+					        <th>Lastname</th>
+					        <th>Email</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr>
+					        <td>John</td>
+					        <td>Doe</td>
+					        <td>john@example.com</td>
+					      </tr>
+					      <tr>
+					        <td>Mary</td>
+					        <td>Moe</td>
+					        <td>mary@example.com</td>
+					      </tr>
+					      <tr>
+					        <td>July</td>
+					        <td>Dooley</td>
+					        <td>july@example.com</td>
+					      </tr>
+					    </tbody>
+					  </table>
+					  </div>
+					</div>
+
+					<div class="container">
+					  <h2>Bordered Table</h2>
+					  <div class="jumbotron">
+					  <p>The .table-bordered class adds borders to a table:</p>            
+					  <table class="table table-bordered">
+					    <thead>
+					      <tr>
+					        <th>Firstname</th>
+					        <th>Lastname</th>
+					        <th>Email</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr>
+					        <td>John</td>
+					        <td>Doe</td>
+					        <td>john@example.com</td>
+					      </tr>
+					      <tr>
+					        <td>Mary</td>
+					        <td>Moe</td>
+					        <td>mary@example.com</td>
+					      </tr>
+					      <tr>
+					        <td>July</td>
+					        <td>Dooley</td>
+					        <td>july@example.com</td>
+					      </tr>
+					    </tbody>
+					  </table>
+					  </div>
+					</div>	
+		</div>	
+		</div>
+		<!--End Content-->				
+
+		<div class="col-md-2";>
+
+		</div>
+
+		</div>
+
+
+		
+	</div>
+		<!--FOOTER-->
+		<div class="row">
+			<div class="col-md-12">
+				<p align="center">martinstephen00.github.io Copyright 2017</p>
 			</div>
 		</div>
-	</nav>
-		
-</div>
-<div class="row">
-	<div class="col-md-2">
-			<ul>
-				<li> <a href="index.html">Home</a> </li>
-				<li> <a href="typography.html">Typography</a></li>
-				<li> <a href="tables.html">Tables</a> </li>
-				<li> <a href="images.html">Images</a> </li>
-				<li> <a href="jumbotron.html">Jumbotron</a> </li>
-				<li> <a href="wells.html">Wells</a> </li>
-				<li> <a href="alerts.html">Alerts</a> </li>
-				<li> <a href="buttons.html">Buttons</a> </li>
-				<li> <a href="buttonGroups.html">Button Groups</a> </li>
-				<li> <a href="glyphicons.html">Glyphicons</a> </li>
-				<li> <a href="badgesLabels.html">Badges Label</a> </li>
-				<li> <a href="progressBars.html">Progress Bars</a> </li>
-				<li> <a href="pagination.html">Pagination</a> </li>
-				<li> <a href="pager.html">Pager</a> </li>
-				<li> <a href="listGroups.html">List Groups</a> </li>
-				<li> <a href="panels.html">Panels</a> </li>
-				<li> <a href="dropdowns.html">Dropdowns</a> </li>
-				<li> <a href="collapse.html">Collapse</a> </li>
-				<li> <a href="tabsPills.html">Tabs Pills</a> </li>
-				<li> <a href="navbar.html">Navbar</a> </li>
-				<li> <a href="forms.html">Froms</a> </li>
-				<li> <a href="inputs.html">Input</a> </li>
-				<li> <a href="inputs2.html">Input 2</a> </li>
-				<li> <a href="mediaObjects.html">Media Objects</a> </li>
-				<li> <a href="carousel.html">Carousel</a> </li>
-				<li> <a href="modal.html">Modal</a> </li>
-				<li> <a href="tooltip.html">Tooltip</a> </li>
-				<li> <a href="popover.html">Popover</a> </li>
-				<li> <a href="scrollspy.html">Scrollspy</a> </li>
-				<li> <a href="affix.html">Affix</a> </li>					
-			</ul>
-	</div>
-	<!--Content here-->
-	<div class="col-md-8">
-				<h1>Tables</h1>
-				<div class="container">
-				  <h2>Basic Table</h2>
-				  <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>            
-				  <table class="table">
-				    <thead>
-				      <tr>
-				        <th>Firstname</th>
-				        <th>Lastname</th>
-				        <th>Email</th>
-				      </tr>
-				    </thead>
-				    <tbody>
-				      <tr>
-				        <td>John</td>
-				        <td>Doe</td>
-				        <td>john@example.com</td>
-				      </tr>
-				      <tr>
-				        <td>Mary</td>
-				        <td>Moe</td>
-				        <td>mary@example.com</td>
-				      </tr>
-				      <tr>
-				        <td>July</td>
-				        <td>Dooley</td>
-				        <td>july@example.com</td>
-				      </tr>
-				    </tbody>
-				  </table>
-				</div>
 
-				<div class="container">
-				  <h2>Striped Rows</h2>
-				  <p>The .table-striped class adds zebra-stripes to a table:</p>            
-				  <table class="table table-striped">
-				    <thead>
-				      <tr>
-				        <th>Firstname</th>
-				        <th>Lastname</th>
-				        <th>Email</th>
-				      </tr>
-				    </thead>
-				    <tbody>
-				      <tr>
-				        <td>John</td>
-				        <td>Doe</td>
-				        <td>john@example.com</td>
-				      </tr>
-				      <tr>
-				        <td>Mary</td>
-				        <td>Moe</td>
-				        <td>mary@example.com</td>
-				      </tr>
-				      <tr>
-				        <td>July</td>
-				        <td>Dooley</td>
-				        <td>july@example.com</td>
-				      </tr>
-				    </tbody>
-				  </table>
-				</div>
-
-				<div class="container">
-				  <h2>Bordered Table</h2>
-				  <p>The .table-bordered class adds borders to a table:</p>            
-				  <table class="table table-bordered">
-				    <thead>
-				      <tr>
-				        <th>Firstname</th>
-				        <th>Lastname</th>
-				        <th>Email</th>
-				      </tr>
-				    </thead>
-				    <tbody>
-				      <tr>
-				        <td>John</td>
-				        <td>Doe</td>
-				        <td>john@example.com</td>
-				      </tr>
-				      <tr>
-				        <td>Mary</td>
-				        <td>Moe</td>
-				        <td>mary@example.com</td>
-				      </tr>
-				      <tr>
-				        <td>July</td>
-				        <td>Dooley</td>
-				        <td>july@example.com</td>
-				      </tr>
-				    </tbody>
-				  </table>
-				</div>	
-	</div>					
-
-	<div class="col-md-2" background-color: black;>
-
-	</div>
-
-	</div>
-
-
-	
-</div>
-	<!--FOOTER-->
-	<div class="row">
-		<div class="col-sm-12">
-			<p align="center">martinstephen00.github.io Copyright 2017</p>
-		</div>
-	</div>
-</div>
 </body>
 </html>
+
+
+
